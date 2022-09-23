@@ -4,12 +4,14 @@
 
 DevEnable is a desktop app for managing developer projects, optimized for use via a Command Line Interface (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, DevEnable can get your project management tasks done faster than traditional GUI apps.
 
-* Table of Contents(toc)
+-------------------------------------------------------------------------------------------------------------------
+
+## Table of Contents(toc)
+
 1. [Quick Start](#Set-Up)
 2. [Features](#features)
 3. [FAQ](#FAQ)
 4. [Command summary](#summary)
-
 
 --------------------------------------------------------------------------------------------------------------------
 
@@ -256,7 +258,6 @@ Action | Format, Examples
 **Tag Deadline** | `deadline -t i/PROJECT_ID d/DATETIME`
 **Edit Deadline** | `deadline -e i/PROJECT_ID d/NEW_DATETIME`
 **Delete Deadline** | `deadline -d i/PROJECT_ID`
-**Edit** | `edit INDEX [n/NAME] [p/PHONE_NUMBER] [e/EMAIL] [a/ADDRESS] [t/TAG]…​`<br> e.g.,`edit 2 n/James Lee e/jameslee@example.com`
 **List** | `list`
 **Clear** | `clear`
 **Help** | `help`
