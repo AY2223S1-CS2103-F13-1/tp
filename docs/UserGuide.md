@@ -187,7 +187,7 @@ Tags a deadline to a project with the specified PROJECT_ID.
 Format: `deadline -t i/PROJECT_ID d/DATETIME`
 
 <div markdown="span" class="alert alert-primary">:bulb: **Tip:**
-DATETIME must be in the following format: yyyy-mm-dd
+`DATETIME` must be in the following format: yyyy-mm-dd
 </div>
 
 Examples:
@@ -199,7 +199,7 @@ Removes a deadline to a project with the specified `PROJECT_ID`.
 
 Format: `deadline -e i/PROJECT_ID d/NEW_DATETIME`
 
-* DATETIME must be in the following format: yyyy-mm-dd
+* `DATETIME` must be in the following format: yyyy-mm-dd
 
 Examples:
 *  `deadline -e 1 2022-09-16`
