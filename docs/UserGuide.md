@@ -6,15 +6,15 @@ title: User Guide
 DevEnable is a desktop app for managing developer projects, optimized for use via a Command Line Interface (CLI) while still having the benefits of a Graphical User Interface (GUI). If you can type fast, DevEnable can get your project management tasks done faster than traditional GUI apps.
 
 * Table of Contents(toc)
-1. [Quick Start](#Quick Start)
+1. [Quick Start](#Set-Up)
 2. [Features](#features)
 3. [FAQ](#FAQ)
-4. [Command summary](#Command summary)
+4. [Command summary](#summary)
 
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Quick Start
+## Set-Up
 
 1. Ensure you have Java `11` or above installed in your Computer.
 
@@ -187,7 +187,7 @@ _Details coming soon ..._
 
 --------------------------------------------------------------------------------------------------------------------
 
-## Command summary
+## Summary
 
 Action | Format, Examples
 --------|------------------
