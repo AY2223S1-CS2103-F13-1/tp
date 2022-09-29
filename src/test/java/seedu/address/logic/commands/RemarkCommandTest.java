@@ -36,7 +36,5 @@ public class RemarkCommandTest {
         expectedModel.setPerson(firstPerson, editedPerson);
 
         assertCommandSuccess(remarkCommand, model, expectedMessage, expectedModel);
-        }
-
-
     }
+}
