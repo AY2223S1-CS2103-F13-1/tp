@@ -31,6 +31,7 @@ public class ClientEmail {
     private static final String DOMAIN_REGEX = "(" + DOMAIN_PART_REGEX + "\\.)*" + DOMAIN_LAST_PART_REGEX;
     public static final String VALIDATION_REGEX = LOCAL_PART_REGEX + "@" + DOMAIN_REGEX;
 
+    public static final ClientEmail EMPTY_EMAIL = new EmptyEmail();
     private String email;
 
     /**
@@ -48,7 +49,6 @@ public class ClientEmail {
      * Represents an Empty ClientEmail.
      */
     private static class EmptyEmail extends ClientEmail {
-        private static final ClientEmail EMPTY_EMAIL = new EmptyEmail();
         private EmptyEmail() {
             super("");
         }

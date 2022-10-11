@@ -11,7 +11,7 @@ public class ClientPhone {
     public static final String MESSAGE_CONSTRAINTS =
             "Phone numbers should only contain numbers, and it should be 8-10 digits";
     public static final String VALIDATION_REGEX = "\\d{3,}";
-
+    public static final ClientPhone EMPTY_PHONE = new EmptyClientPhone();
     private String phone;
 
     /**
@@ -29,7 +29,6 @@ public class ClientPhone {
      * Represents an Empty Client Phone.
      */
     private static class EmptyClientPhone extends ClientPhone {
-        private static final ClientPhone EMPTY_PHONE = new EmptyClientPhone();
         private EmptyClientPhone() {
             super("");
         }

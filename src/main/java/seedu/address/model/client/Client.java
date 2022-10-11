@@ -2,6 +2,7 @@ package seedu.address.model.client;
 
 import static seedu.address.commons.util.CollectionUtil.requireAllNonNull;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import seedu.address.model.Name;
@@ -23,6 +24,7 @@ public class Client {
     //Represents a Collection of projects that the client is responsible for
     private List<Project> projects;
 
+    //Represents the client's unique id
     private ClientId clientId;
 
     /**
@@ -32,13 +34,27 @@ public class Client {
      * @param email String representing email address of the client
      */
     public Client(Name name, ClientPhone phone, ClientEmail email, List<Project> projects, ClientId clientId) {
-        requireAllNonNull(name, phone, email, projects, clientId);
+        requireNonNull(name);
         this.name = name;
         this.phone = phone;
         this.email = email;
         this.projects = projects;
         this.clientId = clientId;
     }
+
+    /**
+     * Constructs a client with only the name given by the user.
+     * @param name String representing name of the client
+     */
+    public Client(Name name) {
+        requireAllNonNull(name);
+        this.name = name;
+        this.phone = ClientPhone.EMPTY_PHONE;
+        this.email = ClientEmail.EMPTY_EMAIL;
+        this.projects = new ArrayList<>();
+
+    }
+
 
     public ClientId getClientId() {
         return this.clientId;
