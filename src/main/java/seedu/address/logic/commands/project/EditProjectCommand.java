@@ -85,7 +85,7 @@ public class EditProjectCommand extends ProjectCommand {
 
         if (newName != null) {
             for (Project p : model.getFilteredProjectList()) {
-                if (p.getProjectName().equals(newName)) {
+                if (p.getProjectName().equals(newName.setCapitalise())) {
                     throw new CommandException(MESSAGE_DUPLICATE_PROJECT_NAME);
                 }
             }
@@ -104,7 +104,9 @@ public class EditProjectCommand extends ProjectCommand {
             }
         }
 
-        toEditProject.setName(newName);
+        if (newName != null) {
+            toEditProject.setName(newName);
+        }
 
         if (newRepository != null) {
             toEditProject.setRepository(newRepository);
