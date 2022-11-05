@@ -39,7 +39,7 @@ public class ProjectWithoutModel implements Function<Model, Project> {
      */
     public ProjectWithoutModel(Name name, Repository repository, Deadline deadline,
                                ClientId clientId, List<Issue> issueList, Pin pin) {
-        this.name = name;
+        this.name = name.setCapitalise();
         this.repository = repository;
         this.deadline = deadline;
         this.clientId = clientId;

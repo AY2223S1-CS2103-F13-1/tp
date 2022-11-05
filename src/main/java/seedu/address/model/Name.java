@@ -1,7 +1,10 @@
 package seedu.address.model;
 
+import static java.lang.Character.isLetter;
 import static java.util.Objects.requireNonNull;
 import static seedu.address.commons.util.AppUtil.checkArgument;
+
+import seedu.address.commons.util.StringUtil;
 
 /**
  * Represents the name of the client. This class is modelled after the Name class in the Person package of AB3
@@ -54,6 +57,16 @@ public class Name {
         }
     }
 
+    /**
+     * Capitalises the name.
+     */
+    public Name setCapitalise() {
+        if (isLetter(getFullNameRepresentation().charAt(0))) {
+            this.fullName = getFullNameRepresentation().substring(0, 1).toUpperCase()
+                    + getFullNameRepresentation().substring(1);
+        }
+        return this;
+    }
 
     /**
      * Returns true if a given string is a valid name. A name is valid only if it contains only letters and spaces and
