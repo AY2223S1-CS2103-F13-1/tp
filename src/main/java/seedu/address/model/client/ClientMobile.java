@@ -83,7 +83,7 @@ public class ClientMobile {
      */
     @Override
     public String toString() {
-        return " (" + this.mobile.toString() + ")";
+        return this.mobile;
     }
     /**
      * Checks if an object equals this.
