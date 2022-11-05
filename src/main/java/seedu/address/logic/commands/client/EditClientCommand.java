@@ -74,7 +74,7 @@ public class EditClientCommand extends ClientCommand {
 
         if (newName != null) {
             for (Client c : model.getFilteredClientList()) {
-                if (c.getClientName().equals(newName)) {
+                if (c.getClientName().equals(newName.setCapitalise())) {
                     throw new CommandException(MESSAGE_DUPLICATE_CLIENT_NAME);
                 }
             }

@@ -36,7 +36,7 @@ public class ClientWithoutModel implements Function<Model, Client> {
 
     public ClientWithoutModel(Name name, ClientMobile mobile, ClientEmail email,
                               List<ProjectId> projectIdList, Pin pin) {
-        this.name = name;
+        this.name = name.setCapitalise();
         this.mobile = mobile;
         this.email = email;
         this.projectIdList = projectIdList;
